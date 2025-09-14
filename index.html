@@ -4,9 +4,27 @@ layout: page
 icon: fas fa-home
 order: 0
 permalink: /
+title: 首页
 ---
 
 <div class="px-1">
-  <h1>欢迎来到 HaiHome 的网站</h1>
-  <p>这是新的主页。你可以在侧边栏访问文章列表、分类和标签。</p>
+  <img id="bili-image" 
+       src="assets/img/bili-1.png" 
+       alt="Bili Image" 
+       style="cursor: pointer; max-width: 100%; height: auto; pointer-events: auto;"
+       onmouseover="this.src='assets/img/bili-2.png'"
+       onmouseout="this.src='assets/img/bili-1.png'"
+       onclick="event.preventDefault(); event.stopPropagation(); window.open('https://space.bilibili.com/1458324692', '_blank', 'noopener,noreferrer')"
+       data-no-popup="true">
+  
+  <br><br>
+  
+  <img id="mc-image" 
+       src="assets/img/mc-1.png" 
+       alt="MC Image" 
+       style="cursor: pointer; max-width: 100%; height: auto; pointer-events: auto;"
+       onmouseover="this.src='assets/img/mc-2.png'"
+       onmouseout="this.src='assets/img/mc-1.png'"
+       onclick="event.preventDefault(); event.stopPropagation(); window.location.href='/tcs'"
+       data-no-popup="true">
 </div>
